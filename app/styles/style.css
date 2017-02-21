@@ -1,0 +1,71 @@
+/*
+
+The CSS is develooped by Burhan Med. We worked this css 7 days 7 nights
+with the help of bootsnip.com.
+This CSS is used for stylinng the contents inside the ui-view not the
+whole of admin pages.
+
+
+*/
+
+
+.clickable{
+    cursor: pointer;   
+}
+.panel-heading div {
+	margin-top: -18px;
+	font-size: 15px;
+}
+.panel-heading div span{
+	margin-left:5px;
+}
+.panel-body{
+	display: none;
+}
+.link-table{
+	margin-top: 30px; 
+}
+.table th a:hover{
+	text-decoration: none;
+}
+.sortorder:after {
+  content: '\25b2';   // BLACK UP-POINTING TRIANGLE
+}
+.sortorder.reverse:after {
+  content: '\25bc';   // BLACK DOWN-POINTING TRIANGLE
+}
+.center{
+	text-align: center;
+}
+.pagination a{
+	cursor: pointer;
+}
+.chart-stat{
+	margin-top: 30px;
+}
+
+#notif{
+	position: fixed;
+	top: 50%;
+	right: 15%;
+	width: 70%;
+	z-index: 100000;
+}
+button{
+	margin: 10px;
+	background-color: #f9243f;
+	border: 1px #f9243f solid;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	border-radius: 10px;
+}
+
+.profile-title{
+	margin: 5px 0 5px 30px;
+}
+.profile-content{
+	background-color: white;
+	padding: 4px;
+	padding-top: 20px;
+	margin: 15px;
+}
