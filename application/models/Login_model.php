@@ -46,7 +46,9 @@ class Login_model extends CI_Model
     }
 
     function auth_login($data){
-        $target =  "email =" . "'" . $data['email'] . "' AND " . "password =" . "'" .$data['password']."'";
+        $mail = $this->db->escape_like_str($data['email']);
+        $pass = $this->db->escape_like_str($data['password']);
+        $target =  "email =" . "'" . $mail . "' AND " . "password =" . "'" .$pass."'";
         $this->db->select('*')
                 ->from('user_auth')
                 ->where($target)
